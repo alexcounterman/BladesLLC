@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         body {
-            background-color: #e8f5e9;
+            background-color: #dcedc8; /* Lighter green background for better contrast */
+            color: #333; /* Darker text for better readability */
         }
         nav {
-            background-color: #2e7d32;
+            background-color: #2e7d32; /* Dark green for navigation */
         }
         nav a {
-            color: white;
+            color: #fff; /* White text for better contrast on dark background */
         }
         h2, h3 {
-            color: #1b5e20;
+            color: #1b5e20; /* Darker green for headings */
+        }
+        p, ul, li {
+            color: #333; /* Darker text for better visibility */
         }
         button {
-            background-color: #43a047;
-            color: white;
+            background-color: #43a047; /* Green button */
+            color: white; /* White button text */
+        }
+        button:hover {
+            background-color: #388e3c; /* Slightly darker green on hover */
         }
         footer {
             margin-top: 2rem;
             padding-top: 1rem;
-            background-color: #2e7d32;
-            color: white;
+            background-color: #2e7d32; /* Dark green footer */
+            color: white; /* White footer text */
         }
         /* Style for the confirmation message */
         #confirmation {
@@ -86,7 +93,7 @@
                     <h2>Contact Us</h2>
                     <h3>We’d love to hear from you!</h3>
                 </hgroup>
-                <form class="grid" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+                <form class="grid" action="https://formspree.io/f/mzzbbrpd" method="POST" id="contactForm">
                     <input type="text" id="fullname" name="fullname" placeholder="Full Name" aria-label="Full Name" required />
                     <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
                     <textarea id="message" name="message" placeholder="Your Message" aria-label="Message" rows="4" required></textarea>
