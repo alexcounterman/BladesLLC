@@ -7,26 +7,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         body {
-            background-color: #e8f5e9; /* Light green background */
+            background-color: #e8f5e9;
         }
         nav {
-            background-color: #2e7d32; /* Dark green nav bar */
+            background-color: #2e7d32;
         }
         nav a {
             color: white;
         }
         h2, h3 {
-            color: #1b5e20; /* Deep green text */
+            color: #1b5e20;
         }
         button {
-            background-color: #43a047; /* Button green */
+            background-color: #43a047;
             color: white;
         }
         footer {
             margin-top: 2rem;
             padding-top: 1rem;
-            background-color: #2e7d32; /* Footer green */
+            background-color: #2e7d32;
             color: white;
+        }
+        /* Style for the confirmation message */
+        #confirmation {
+            display: none;
+            margin-top: 1rem;
+            color: green;
         }
     </style>
 </head>
@@ -53,13 +59,12 @@
                     <h3>Serving Stroudsburg, PA, and Surrounding Areas</h3>
                 </hgroup>
                 <p>At Blades LLC, we provide top-notch lawn care services, including grass cutting, hedge trimming, seasonal clean-ups, and more. Our team is committed to keeping your yard looking its best.</p>
-                <!-- Custom DALL-E Image -->
                 <figure>
-                    <img src="https://files.oaiusercontent.com/file-UA8UDjPXFAJhY495ygTCW6sg?se=2024-10-06T14%3A06%3A28Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D902211ef-a068-4e22-81d8-8849adaf452a.webp&sig=LBvKXkMgG/nwqlyw26LcI8JTh7le4RuA5k8IDxkS44U%3D" alt="Lawn being cut with grass flying">
-                    <figcaption><a href="#" target="_blank">Lawn Care in Action</a></figcaption>
+                    <!-- Unsplash Image -->
+                    <img src="https://source.unsplash.com/1600x900/?lawn,mowing" alt="Lawn care with mowing action">
+                    <figcaption><a href="https://unsplash.com" target="_blank">Lawn Care Image from Unsplash</a></figcaption>
                 </figure>
 
-                <!-- Services Section -->
                 <h3 id="services">Our Services</h3>
                 <p>We offer a wide range of lawn care and landscaping services:</p>
                 <ul>
@@ -81,12 +86,15 @@
                     <h2>Contact Us</h2>
                     <h3>We’d love to hear from you!</h3>
                 </hgroup>
-                <form class="grid">
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
+                <form class="grid" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name" aria-label="Full Name" required />
                     <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
                     <textarea id="message" name="message" placeholder="Your Message" aria-label="Message" rows="4" required></textarea>
-                    <button type="submit" onclick="event.preventDefault()">Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
+
+                <!-- Confirmation message -->
+                <p id="confirmation">Thank you! Your message was submitted successfully. A member of Blades LLC will contact you shortly.</p>
             </article>
         </div>
     </section>
@@ -106,6 +114,17 @@
                 });
             });
         });
+
+        // Form submission script for confirmation message
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Show confirmation message
+            document.getElementById('confirmation').style.display = 'block';
+
+            // Optionally, you can reset the form after submission
+            this.reset();
+        });
     </script>
+
 </body>
 </html>
