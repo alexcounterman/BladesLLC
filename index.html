@@ -6,35 +6,62 @@
     <title>Blades LLC - Lawn Care in Stroudsburg, PA</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
+        /* Adjustments for better visibility in both light and dark mode */
+        :root {
+            --primary: #2e7d32;
+            --secondary: #388e3c;
+            --background-light: #dcedc8;
+            --text-dark: #333;
+            --text-light: #fff;
+        }
+
         body {
-            background-color: #dcedc8; /* Lighter green background for better contrast */
-            color: #333; /* Darker text for better readability */
+            background-color: var(--background-light);
+            color: var(--text-dark);
         }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: var(--text-light);
+            }
+            nav, footer {
+                background-color: var(--primary);
+            }
+        }
+
         nav {
-            background-color: #2e7d32; /* Dark green for navigation */
+            background-color: var(--primary);
         }
+
         nav a {
-            color: #fff; /* White text for better contrast on dark background */
+            color: var(--text-light);
         }
+
         h2, h3 {
-            color: #1b5e20; /* Darker green for headings */
+            color: var(--primary);
         }
+
         p, ul, li {
-            color: #333; /* Darker text for better visibility */
+            color: var(--text-dark);
         }
+
         button {
-            background-color: #43a047; /* Green button */
-            color: white; /* White button text */
+            background-color: var(--secondary);
+            color: var(--text-light);
         }
+
         button:hover {
-            background-color: #388e3c; /* Slightly darker green on hover */
+            background-color: var(--primary);
         }
+
         footer {
             margin-top: 2rem;
             padding-top: 1rem;
-            background-color: #2e7d32; /* Dark green footer */
-            color: white; /* White footer text */
+            background-color: var(--primary);
+            color: var(--text-light);
         }
+
         /* Style for the confirmation message */
         #confirmation {
             display: none;
@@ -54,6 +81,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact" role="button">Contact Us</a></li>
+            <li><a href="terms.html" target="_blank">Terms of Service</a></li>
+            <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
         </ul>
     </nav>
 
@@ -67,9 +96,7 @@
                 </hgroup>
                 <p>At Blades LLC, we provide top-notch lawn care services, including grass cutting, hedge trimming, seasonal clean-ups, and more. Our team is committed to keeping your yard looking its best.</p>
                 <figure>
-                    <!-- Unsplash Image -->
-                    <img src="https://source.unsplash.com/1600x900/?lawn,mowing" alt="Lawn care with mowing action">
-                    <figcaption><a href="https://unsplash.com" target="_blank">Lawn Care Image from Unsplash</a></figcaption>
+                    <img src="https://www.facebook.com/photo/?fbid=454872473324714&set=a.454872466658048" alt="Blades LLC Offered Services" />
                 </figure>
 
                 <h3 id="services">Our Services</h3>
@@ -93,13 +120,44 @@
                     <h2>Contact Us</h2>
                     <h3>We’d love to hear from you!</h3>
                 </hgroup>
-                <form class="grid" action="https://formspree.io/f/mzzbbrpd" method="POST" id="contactForm">
-                    <input type="text" id="fullname" name="fullname" placeholder="Full Name" aria-label="Full Name" required />
-                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-                    <textarea id="message" name="message" placeholder="Your Message" aria-label="Message" rows="4" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+                <!-- Contact Form linked to Formspree -->
+                <!-- Contact Form with Formspree -->
+<form action="https://formspree.io/f/mzzbbrpd" method="POST">
+  
+  <!-- Email Field (Required) -->
+  <label for="email">Your Email:
+    <input type="email" id="email" name="email" required>
+  </label>
 
+  <!-- First Name Field (Required, Max Length 50) -->
+  <label for="firstName">First Name:
+    <input type="text" id="firstName" name="firstName" required maxlength="50">
+  </label>
+
+  <!-- Last Name Field (Required, Max Length 50) -->
+  <label for="lastName">Last Name:
+    <input type="text" id="lastName" name="lastName" required maxlength="50">
+  </label>
+
+  <!-- Address Field (Required, Max Length 250) -->
+  <label for="address">Address:
+    <input type="text" id="address" name="address" required maxlength="250">
+  </label>
+
+  <!-- Phone Number Field (Required) -->
+  <label for="phoneNumber">Phone Number:
+    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+  </label>
+
+  <!-- What Can We Help You With Field (Required, Max Length 1200) -->
+  <label for="help">What can we help you with?
+    <textarea id="help" name="help" required maxlength="1200"></textarea>
+  </label>
+
+  <!-- Submit Button -->
+  <button type="submit">Send</button>
+  
+</form>
                 <!-- Confirmation message -->
                 <p id="confirmation">Thank you! Your message was submitted successfully. A member of Blades LLC will contact you shortly.</p>
             </article>
@@ -108,7 +166,7 @@
 
     <!-- Footer -->
     <footer class="container">
-        <small><a href="#">Terms of Service</a> • <a href="#">Privacy Policy</a></small>
+        <small><a href="terms.html" target="_blank">Terms of Service</a> • <a href="privacy.html" target="_blank">Privacy Policy</a></small>
     </footer>
 
     <!-- Smooth Scrolling Script -->
