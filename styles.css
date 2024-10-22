@@ -1,19 +1,14 @@
-/* Base styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dcedc8; /* Same light green background color for consistency */
+    background-color: #f4f4f4;
     color: #333;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
-/* Header styling */
 header {
-    background-color: var(--primary); /* Use the primary green */
-    color: var(--text-light);         /* Light text color */
+    background-color: #28a745;
+    color: white;
     padding: 1em;
     text-align: center;
 }
@@ -29,39 +24,27 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: var(--text-light);         /* Links match the light text color */
+    color: white;
     text-decoration: none;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;       /* Underline links on hover */
-}
-
-/* Hero section styling */
 #hero {
     text-align: center;
     padding: 50px;
-    background-color: var(--secondary); /* Use secondary green color */
-    color: var(--text-light);
+    background-color: #77dd77;
 }
 
 #hero h2 {
     margin-bottom: 10px;
-    color: var(--text-light);          /* White text in hero section */
 }
 
 .btn {
     padding: 10px 20px;
-    background-color: var(--primary);  /* Primary green button */
-    color: var(--text-light);
+    background-color: #006400;
+    color: white;
     text-decoration: none;
 }
 
-.btn:hover {
-    background-color: var(--secondary); /* Change on hover for consistency */
-}
-
-/* Gallery section */
 #gallery {
     padding: 20px;
     text-align: center;
@@ -81,7 +64,7 @@ header nav ul li a:hover {
 
 .gallery-item img {
     width: 100%;
-    border: 2px solid var(--primary);  /* Green border around images */
+    border: 2px solid #28a745;
     border-radius: 8px;
 }
 
