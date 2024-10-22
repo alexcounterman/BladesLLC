@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Blades LLC</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Flexbox centering */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center; /* Center text horizontally */
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,39 +44,29 @@
         </nav>
     </header>
 
-    <!-- About Section -->
-    <section>
-        <h2>About Us</h2>
-        <p>At Blades LLC, we provide top-quality lawn care to both residential and commercial clients in Stroudsburg, PA. We are currently accepting new business and specialize in a wide range of services to meet your landscaping needs.</p>
-        <h3>Our Services</h3>
-        <ul>
-            <li>Grass Cutting & Lawn Maintenance</li>
-            <li>Mulching</li>
-            <li>Tree Installations</li>
-            <li>Flower Installations</li>
-            <li>Rock Bed Installation (River Rock)</li>
-            <li>Hedge Trimming</li>
-            <li>Lawn Mowing</li>
-        </ul>
-        
-        <!-- Reuse Gallery Images -->
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/my-lawn1.jpg" alt="Mulching">
-            </div>
-            <div class="gallery-item">
-                <img src="images/my-lawn2.jpg" alt="Tree Installations">
-            </div>
-            <div class="gallery-item">
-                <img src="images/my-lawn3.jpg" alt="Rock Bed Installations">
-            </div>
-        </div>
-    </section>
+    <!-- Main About Content -->
+    <main>
+        <section>
+            <h2>About Blades LLC</h2>
+            <p>At Blades LLC, we are committed to providing top-quality lawn care services to both residential and commercial clients in the Stroudsburg, PA area.</p>
+            <p>We are currently accepting new business and offer a variety of services, including:</p>
+            <ul>
+                <li>Grass Cutting</li>
+                <li>Hedge Trimming</li>
+                <li>Mulch Installation</li>
+                <li>Rock Bed Installations</li>
+                <li>Planting and Landscape Design</li>
+            </ul>
+        </section>
+        <section>
+            <img src="images/my-lawn1.jpg" alt="Lawn Care Example 1">
+            <img src="images/my-lawn2.jpg" alt="Lawn Care Example 2">
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Blades LLC. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
