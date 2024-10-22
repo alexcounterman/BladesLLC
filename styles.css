@@ -69,11 +69,44 @@ header nav ul li a {
 }
 
 footer {
-    background-color: #28a745;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    background-color: var(--primary);  /* Consistent with your primary color */
+    color: var(--text-light);          /* Text color contrasts well with the background */
+    text-align: center;                /* Center the content */
+    padding: 1rem 0;                   /* Space for better readability */
+    position: relative;                /* Positioned at the bottom without being fixed */
+    width: 100%;                       /* Full width */
+    bottom: 0;                         /* Stick to the bottom */
+}
+
+footer a {
+    color: var(--text-light);          /* Footer links match the light text color */
+    text-decoration: none;             /* Remove underline for cleaner look */
+}
+
+footer a:hover {
+    text-decoration: underline;        /* Underline on hover for visibility */
+}
+
+footer small {
+    display: block;                    /* Block level for full width, centered */
+    margin-top: 1rem;                  /* Space above for breathing room */
+}
+
+footer p, footer small {
+    font-size: 0.9rem;                 /* Slightly smaller text for footer */
+}
+
+/* Ensuring footer sticks to bottom of short pages */
+html, body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    flex: 1;
 }
