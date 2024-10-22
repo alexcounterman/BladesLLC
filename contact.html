@@ -1,85 +1,93 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Blades LLC</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Style adjustments for the form */
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+    <head>
+        <title>Contact Us - Blades LLC</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
 
-        label, input, textarea {
-            margin-bottom: 15px;
-            width: 100%;
-        }
+            <!-- Header -->
+            <div id="header">
+                <!-- Logo -->
+                <h1><a href="index.html" id="logo">Blades LLC</a></h1>
 
-        textarea {
-            height: 150px; /* Larger textarea */
-            resize: vertical;
-        }
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="current">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        button {
-            align-self: flex-start;
-        }
-    </style>
-</head>
-<body>
+            <!-- Main Content -->
+            <section id="main" class="wrapper style1">
+                <div class="container">
+                    <header class="major">
+                        <h2>Contact Us</h2>
+                    </header>
+                    <section>
+                        <form action="https://formspree.io/f/mzzbbrpd" method="POST">
+                            <div class="row gtr-50">
+                                <div class="col-6 col-12-mobilep">
+                                    <label for="email">Your Email:</label>
+                                    <input type="email" id="email" name="email" required />
+                                </div>
+                                <div class="col-6 col-12-mobilep">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName" required />
+                                </div>
+                                <div class="col-6 col-12-mobilep">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName" required />
+                                </div>
+                                <div class="col-12">
+                                    <label for="address">Address:</label>
+                                    <input type="text" id="address" name="address" required />
+                                </div>
+                                <div class="col-6 col-12-mobilep">
+                                    <label for="phoneNumber">Phone Number:</label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" required />
+                                </div>
+                                <div class="col-12">
+                                    <label for="help">What can we help you with?</label>
+                                    <textarea id="help" name="help" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="button primary">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </section>
 
-    <!-- Navigation -->
-    <header>
-        <h1>Blades LLC</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="terms.html">Terms</a></li>              
-            </ul>
-        </nav>
-    </header>
+            <!-- Footer -->
+            <div id="footer">
+                <div class="container">
+                    <ul class="menu">
+                        <li>&copy; 2024 Blades LLC. All rights reserved.</li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/mzzbbrpd" method="POST">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+        </div>
 
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required>
-
-            <label for="help">What can we help you with?</label>
-            <textarea id="help" name="help" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <!-- Footer -->
-<footer>
-    <p>&copy; 2024 Blades LLC. All rights reserved.</p>
-    <small>
-        <a href="terms.html" target="_blank">Terms of Service</a> •
-        <a href="privacy.html" target="_blank">Privacy Policy</a>
-    </small>
-</footer>
-</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
-
-
