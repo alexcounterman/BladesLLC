@@ -34,9 +34,11 @@ header nav ul li a {
     background-color: #77dd77;
 }
 
-#hero h2 {
-    margin-bottom: 10px;
+#hero h1 {
+    text-align: center; /* Centers text horizontally */
+    margin: 20px 0; /* Adds some margin for spacing */
 }
+
 
 .btn {
     padding: 10px 20px;
