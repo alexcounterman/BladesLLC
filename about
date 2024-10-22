@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>About Us - Blades LLC</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <div id="header">
+                <!-- Logo -->
+                <h1><a href="index.html" id="logo">Blades LLC</a></h1>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html" class="current">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Main -->
+            <section id="main" class="wrapper style1">
+                <div class="container">
+                    <header class="major">
+                        <h2>About Blades LLC</h2>
+                        <p>Family-Owned Lawn Care Experts Since 2021</p>
+                    </header>
+
+                    <section>
+                        <h3>Our Story</h3>
+                        <p>Blades LLC is a family-owned and operated business, proudly serving the Stroudsburg, Bartonsville, Scotrun, Tannersville, and East Stroudsburg areas since 2021. Our commitment to providing high-quality lawn care services is deeply rooted in our dedication to our community and our customers. Fully insured and with years of expertise, we deliver exceptional results with every job.</p>
+
+                        <p>We understand the importance of a well-maintained lawn, and our mission is to ensure that your property always looks its best. From lawn mowing to landscaping, we bring the care and attention your lawn deserves, and we pride ourselves on building long-term relationships with our clients based on trust and excellent service.</p>
+
+                        <h3>Our Service Areas</h3>
+                        <p>We proudly provide our lawn care and landscaping services in:</p>
+                        <ul>
+                            <li>Stroudsburg</li>
+                            <li>Bartonsville</li>
+                            <li>Scotrun</li>
+                            <li>Tannersville</li>
+                            <li>East Stroudsburg</li>
+                        </ul>
+
+                        <p>No matter where you are located within these areas, we bring the same level of dedication to your property. Whether it’s a small residential yard or a large commercial lawn, we have the experience and equipment to handle it all.</p>
+                    </section>
+
+                    <section>
+                        <h3>Why Choose Us?</h3>
+                        <p>At Blades LLC, we go above and beyond to ensure that every lawn we service reflects our commitment to quality. Here’s why our customers keep choosing us:</p>
+                        <ul>
+                            <li>We are fully insured for your peace of mind.</li>
+                            <li>We offer personalized service to meet each client’s unique needs.</li>
+                            <li>Our team is reliable, punctual, and professional.</li>
+                            <li>We use top-of-the-line equipment for a perfect cut every time.</li>
+                            <li>Customer satisfaction is our top priority, and we stand behind our work.</li>
+                        </ul>
+
+                        <p>Since 2021, we've been dedicated to providing excellent lawn care services that go beyond expectations. As a family-owned business, we understand the value of hard work, honesty, and dedication. Our reputation in the community means everything to us, and we treat every lawn as if it were our own.</p>
+                    </section>
+
+                    <section>
+                        <h3>Gallery</h3>
+                        <p>Take a look at some of the beautiful properties we’ve worked on! Our gallery showcases the care and attention we put into every project, large or small.</p>
+
+                        <div class="row gtr-50">
+                            <div class="col-4 col-12-mobilep">
+                                <span class="image fit"><img src="assets/images/gallery1.jpg" alt="Beautiful lawn 1" /></span>
+                            </div>
+                            <div class="col-4 col-12-mobilep">
+                                <span class="image fit"><img src="assets/images/gallery2.jpg" alt="Beautiful lawn 2" /></span>
+                            </div>
+                            <div class="col-4 col-12-mobilep">
+                                <span class="image fit"><img src="assets/images/gallery3.jpg" alt="Beautiful lawn 3" /></span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <div id="footer">
+                <div class="container">
+                    <ul class="menu">
+                        <li>&copy; 2024 Blades LLC. All rights reserved.</li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
