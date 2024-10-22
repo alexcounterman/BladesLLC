@@ -2364,7 +2364,7 @@ input, select, textarea {
 		}
 /* Header Logo */
 	.header-logo {
-    max-width: 150px;  /* Adjust this value as needed */
+    max-width: 250px;  /* Adjust this value as needed */
     height: auto;      /* Maintain aspect ratio */
 }
 
