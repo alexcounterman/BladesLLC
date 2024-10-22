@@ -46,6 +46,10 @@ ul {
     margin: 20px 0; /* Adds some margin for spacing */
 }
 
+#hero h3 {
+    text-align: left; /* left text horizontally */
+    margin: 20px 0; /* Adds some margin for spacing */
+}
 
 .btn {
     padding: 10px 20px;
