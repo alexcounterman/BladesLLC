@@ -28,6 +28,13 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Centering list items */
+ul {
+    list-style-position: inside; /* Keeps the bullets with the text */
+    padding: 0;                 /* Removes default padding */
+    text-align: center;         /* Centers the text within the list */
+}
+
 #hero {
     text-align: center;
     padding: 50px;
