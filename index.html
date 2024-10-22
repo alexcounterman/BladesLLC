@@ -2,50 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blades LLC - Lawn Care in Stroudsburg, PA</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        /* Adjustments for better visibility in both light and dark mode */
+        :root {
+            --primary: #2e7d32;
+            --secondary: #388e3c;
+            --background-light: #dcedc8;
+            --text-dark: #333;
+            --text-light: #fff;
+        }
+
+        body {
+            background-color: var(--background-light);
+            color: var(--text-dark);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: var(--text-light);
+            }
+            nav, footer {
+                background-color: var(--primary);
+            }
+        }
+
+        nav {
+            background-color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text-light);
+        }
+
+        h2, h3 {
+            color: var(--primary);
+        }
+
+        p, ul, li {
+            color: var(--text-dark);
+        }
+
+        button {
+            background-color: var(--secondary);
+            color: var(--text-light);
+        }
+
+        button:hover {
+            background-color: var(--primary);
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            background-color: var(--primary);
+            color: var(--text-light);
+        }
+
+        /* Flexbox centering */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center; /* Center text horizontally */
+        }
+
+        #hero {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        /* Centering gallery button */
+        .btn {
+            margin: 1rem auto;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-    <header>
-        <h1>Blades LLC</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="terms.html">Terms</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <h2>Professional Lawn Care Services</h2>
-        <p>Your lawn deserves the best care!</p>
-        <a href="gallery.html" class="btn" style="display: inline-block; text-align: center;">View Our Work</a>
-    </section>
+    <!-- Navigation -->
+    <nav class="container-fluid">
+        <ul>
+            <li><strong><a href="#">Blades LLC</a></strong></li>
+        </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact" role="button">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>            
+            <li><a href="terms.html" target="_blank">Terms of Service</a></li>
+            <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+        </ul>
+    </nav>
 
     <!-- Main Content -->
-    <main class="container">
-        <h3>Our Services</h3>
+    <main id="home">
+        <hgroup>
+            <h2>Professional Lawn Care Services</h2>
+            <h3>Serving Stroudsburg, PA, and Surrounding Areas</h3>
+        </hgroup>
+        <p>At Blades LLC, we provide top-notch lawn care services, including grass cutting, hedge trimming, seasonal clean-ups, and more. Our team is committed to keeping your yard looking its best.</p>
+        <figure>
+            <img src="images/my-lawn1.jpg" alt="Blades LLC Offered Services" />
+        </figure>
+
+        <h3 id="services">Our Services</h3>
+        <p>We offer a wide range of lawn care and landscaping services:</p>
         <ul>
             <li>Grass Cutting & Lawn Maintenance</li>
             <li>Hedge Trimming & Shrub Care</li>
+            <li>Spring & Fall Clean-Ups</li>
             <li>Mulching & Rock Bed Installation</li>
             <li>Planting & Light Landscape Design</li>
-            <li>Spring & Fall Clean-Ups</li>
         </ul>
+
+        <div id="hero">
+            <h2>Your lawn deserves the best care!</h2>
+            <a href="gallery.html" class="btn">View Our Work</a>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Blades LLC. All rights reserved.</p>
+    <footer class="container">
+        <small><a href="terms.html" target="_blank">Terms of Service</a> • <a href="privacy.html" target="_blank">Privacy Policy</a></small>
     </footer>
-
 </body>
 </html>
