@@ -1,0 +1,130 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcedc8; /* Same light green background color for consistency */
+    color: #333;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: var(--primary); /* Use the primary green */
+    color: var(--text-light);         /* Light text color */
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: var(--text-light);         /* Links match the light text color */
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;       /* Underline links on hover */
+}
+
+/* Hero section styling */
+#hero {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--secondary); /* Use secondary green color */
+    color: var(--text-light);
+}
+
+#hero h2 {
+    margin-bottom: 10px;
+    color: var(--text-light);          /* White text in hero section */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--primary);  /* Primary green button */
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--secondary); /* Change on hover for consistency */
+}
+
+/* Gallery section */
+#gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border: 2px solid var(--primary);  /* Green border around images */
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--primary);  /* Consistent with your primary color */
+    color: var(--text-light);          /* Light text color */
+    text-align: center;                /* Center the content */
+    padding: 1rem 0;                   /* Space for better readability */
+    width: 100%;                       /* Full width */
+    position: relative;                /* Positioned at the bottom without being fixed */
+    bottom: 0;                         /* Stick to the bottom */
+}
+
+footer a {
+    color: var(--text-light);          /* Footer links match the light text color */
+    text-decoration: none;             /* Remove underline for cleaner look */
+}
+
+footer a:hover {
+    text-decoration: underline;        /* Underline on hover for visibility */
+}
+
+footer small {
+    display: block;                    /* Block level for full width, centered */
+    margin-top: 1rem;                  /* Space above for breathing room */
+}
+
+footer p, footer small {
+    font-size: 0.9rem;                 /* Slightly smaller text for footer */
+}
+
+/* Main content centering */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text in main content */
+}
+
+/* Ensuring footer sticks to bottom of short pages */
+html, body {
+    min-height: 100%;
+}
