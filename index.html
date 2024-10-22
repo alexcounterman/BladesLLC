@@ -2,37 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Blades LLC</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Flexbox centering */
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center; /* Center text horizontally */
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 1rem auto;
-        }
-
-        /* Centering list items */
-        ul {
-            list-style-position: inside; /* Keeps the bullets with the text */
-            padding: 0;                 /* Removes default padding */
-            text-align: center;         /* Centers the text within the list */
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blades LLC - Lawn Care in Stroudsburg, PA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -51,24 +23,29 @@
         </nav>
     </header>
 
-    <!-- Main About Content -->
-    <main>
-        <section>
-            <h2>About Blades LLC</h2>
-            <p>At Blades LLC, we are committed to providing top-quality lawn care services to both residential and commercial clients in the Stroudsburg, PA area.</p>
-            <p>We are currently accepting new business and offer a variety of services, including:</p>
-            <ul>
-                <li>Grass Cutting</li>
-                <li>Hedge Trimming</li>
-                <li>Mulch Installation</li>
-                <li>Rock Bed Installations</li>
-                <li>Planting and Landscape Design</li>
-            </ul>
-        </section>
-        <section>
-            <img src="images/my-lawn1.jpg" alt="Lawn Care Example 1">
-            <img src="images/my-lawn2.jpg" alt="Lawn Care Example 2">
-        </section>
+    <!-- Main Content -->
+    <main id="home">
+        <h2>Professional Lawn Care Services</h2>
+        <h3>Serving Stroudsburg, PA, and Surrounding Areas</h3>
+        <p>At Blades LLC, we provide top-notch lawn care services, including grass cutting, hedge trimming, seasonal clean-ups, and more. Our team is committed to keeping your yard looking its best.</p>
+        <figure>
+            <img src="images/my-lawn1.jpg" alt="Blades LLC Offered Services" />
+        </figure>
+
+        <h3 id="services">Our Services</h3>
+        <p>We offer a wide range of lawn care and landscaping services:</p>
+        <ul>
+            <li>Grass Cutting & Lawn Maintenance</li>
+            <li>Hedge Trimming & Shrub Care</li>
+            <li>Spring & Fall Clean-Ups</li>
+            <li>Mulching & Rock Bed Installation</li>
+            <li>Planting & Light Landscape Design</li>
+        </ul>
+
+        <div id="hero">
+            <h2>Your lawn deserves the best care!</h2>
+            <a href="gallery.html" class="btn">View Our Work</a>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -79,6 +56,5 @@
             <a href="privacy.html" target="_blank">Privacy Policy</a>
         </small>
     </footer>
-    
 </body>
 </html>
