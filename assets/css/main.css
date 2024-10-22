@@ -2681,7 +2681,7 @@ input, select, textarea {
 		    background-image: url("images/bg01.png"); /* Corrected path to the background image */
 		    background-position: center center;
 		    background-size: cover;
-		    height: 28em; /* You can adjust the height as needed */
+		    height: 15em; /* You can adjust the height as needed */
 		    text-align: center;
 		    position: relative;
 		}
